@@ -39,3 +39,5 @@ jobs:
         run: python scripts/test_refresh.py
       - name: Run reproducible demo
         run: python scripts/demo.py
+      - name: Build installable package
+        run: python scripts/build_release.py --version v0.0.0 --output-dir dist

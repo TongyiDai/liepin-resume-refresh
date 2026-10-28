@@ -22,16 +22,18 @@ def main():
         parser.error('Stage the release files in Git first')
     args.output_dir.mkdir(parents=True,exist_ok=True)
     archive=args.output_dir/f'liepin-resume-refresh-{args.version}.zip'
+    temporary=archive.with_suffix('.zip.tmp')
     forbidden={'config.json','state.json','click.json','events.jsonl','initial-binding.json','run.lock'}
-    with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as output:
+    with zipfile.ZipFile(temporary,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as output:
         for name in sorted(filter(None,files)):
             path=root/name
-            if path.name in forbidden or any(part in {'.git','__pycache__','node_modules','dist','work','outputs'} for part in path.parts):
+            if path.name in forbidden or any(part in {'.git','__pycache__','node_modules','dist','work','outputs'} for part in Path(name).parts):
                 raise ValueError('Private or generated file found in release index')
             info=zipfile.ZipInfo('liepin-resume-refresh/'+name,(1980,1,1,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED
             info.external_attr=0o100644<<16
-            output.writestr(info,path.read_bytes())
+            output.writestr(info,subprocess.check_output(['git','show',':'+name],cwd=root))
+    temporary.replace(archive)
     print(archive.name)
 
 
