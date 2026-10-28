@@ -1,0 +1,4 @@
+interface:
+  display_name: "猎聘简历每日刷新"
+  short_description: "让 AI 按时替候选人刷新猎聘简历，核对本人账号并确认执行结果"
+  default_prompt: "用 $liepin-resume-refresh 配置我的猎聘账号，让 AI 每天上午 9 点左右替我刷新简历。"

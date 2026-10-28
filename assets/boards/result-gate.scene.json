@@ -1,0 +1,63 @@
+{
+  "canvas": {
+    "width": 1200,
+    "height": 675,
+    "ratio": "16:9",
+    "background": "#FFFFFF",
+    "grid": 8
+  },
+  "intent": {
+    "core_message": "确认本人，再刷新一次",
+    "composition": "axis-flow",
+    "focus_node": "result"
+  },
+  "style": {
+    "theme": "geometry-minimal",
+    "accent_color": "#2F6BFF",
+    "line_weight": 1,
+    "corner_radius": 0
+  },
+  "nodes": [
+    {
+      "id": "identity",
+      "label": "确认本人",
+      "type": "point",
+      "importance": 3
+    },
+    {
+      "id": "day",
+      "label": "检查今天",
+      "type": "point",
+      "importance": 3
+    },
+    {
+      "id": "result",
+      "label": "核验结果",
+      "type": "circle",
+      "importance": 5
+    },
+    {
+      "id": "stop",
+      "label": "异常时停止",
+      "type": "point",
+      "importance": 2
+    }
+  ],
+  "edges": [
+    {
+      "from": "identity",
+      "to": "day",
+      "relation": "check"
+    },
+    {
+      "from": "day",
+      "to": "result",
+      "relation": "execute"
+    },
+    {
+      "from": "day",
+      "to": "stop",
+      "relation": "stop"
+    }
+  ]
+}

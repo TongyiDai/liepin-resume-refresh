@@ -1,0 +1,63 @@
+{
+  "canvas": {
+    "width": 1200,
+    "height": 675,
+    "ratio": "16:9",
+    "background": "#FFFFFF",
+    "grid": 8
+  },
+  "intent": {
+    "core_message": "让 AI 每天替你刷新简历",
+    "composition": "input-process-output",
+    "focus_node": "agent"
+  },
+  "style": {
+    "theme": "geometry-minimal",
+    "accent_color": "#2F6BFF",
+    "line_weight": 1,
+    "corner_radius": 0
+  },
+  "nodes": [
+    {
+      "id": "login",
+      "label": "本人登录",
+      "type": "point",
+      "importance": 2
+    },
+    {
+      "id": "timer",
+      "label": "每日唤起",
+      "type": "point",
+      "importance": 2
+    },
+    {
+      "id": "agent",
+      "label": "AI Skill",
+      "type": "circle",
+      "importance": 5
+    },
+    {
+      "id": "result",
+      "label": "刷新完成",
+      "type": "point",
+      "importance": 3
+    }
+  ],
+  "edges": [
+    {
+      "from": "login",
+      "to": "agent",
+      "relation": "input"
+    },
+    {
+      "from": "timer",
+      "to": "agent",
+      "relation": "trigger"
+    },
+    {
+      "from": "agent",
+      "to": "result",
+      "relation": "execute"
+    }
+  ]
+}
