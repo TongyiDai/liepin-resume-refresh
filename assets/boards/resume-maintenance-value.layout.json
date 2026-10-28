@@ -1,5 +1,5 @@
 {
-  "message": "按计划维护简历活跃状态，减少候选人每天记忆与重复操作的负担。",
+  "message": "持续维护简历活跃度，争取招聘方侧靠前展示的机会，并将反复手工操作交给AI。",
   "composition": "three_equal_rows",
   "regions": [
     {
@@ -8,8 +8,8 @@
       "width": 1536,
       "height": 180,
       "fill": "#ffffff",
-      "title": "01 少一件要记的事",
-      "body": "到点自动执行，平时不必盯着",
+      "title": "01 维护简历活跃",
+      "body": "按计划刷新，减少忙碌或遗忘造成的漏刷",
       "safe_padding": 72
     },
     {
@@ -17,9 +17,9 @@
       "y": 496,
       "width": 1536,
       "height": 180,
-      "fill": "#ffffff",
-      "title": "02 少一遍重复操作",
-      "body": "每天打开、点击和确认，交给 AI",
+      "fill": "#375dfe",
+      "title": "02 争取靠前展示",
+      "body": "持续维护活跃度，争取 HR 侧展示机会",
       "safe_padding": 72
     },
     {
@@ -27,9 +27,9 @@
       "y": 692,
       "width": 1536,
       "height": 180,
-      "fill": "#375dfe",
-      "title": "03 简历按计划维护",
-      "body": "减少漏刷，持续维护简历活跃状态",
+      "fill": "#ffffff",
+      "title": "03 频繁操作交给 AI",
+      "body": "你专注岗位与面试，AI 按时执行并核验",
       "safe_padding": 72
     }
   ],

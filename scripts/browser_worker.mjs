@@ -94,7 +94,7 @@ async function nativeResponse(page, events, suffix) {
 }
 
 try {
-  task = await taskSpace(input.browser === "cdp" ? `猎聘每日刷新 ${nowISO}` : input.spaceId);
+  task = await taskSpace(input.browser === "cdp" ? `猎聘简历自动刷新 ${nowISO}` : input.spaceId);
   const page = task.page(input.pageLabel || "p1");
   await page.cdp("Network.enable");
   await page.goto(binding.resume_url);

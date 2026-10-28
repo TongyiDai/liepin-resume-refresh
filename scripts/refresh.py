@@ -175,7 +175,7 @@ def notify(status: str) -> None:
     message = messages.get(status, "猎聘简历刷新需要检查，请查看运行状态。")
     escaped = message.replace("\\", "\\\\").replace('"', '\\"')
     try:
-        subprocess.run(["/usr/bin/osascript", "-e", f'display notification "{escaped}" with title "猎聘简历刷新"'], capture_output=True, timeout=10)
+        subprocess.run(["/usr/bin/osascript", "-e", f'display notification "{escaped}" with title "猎聘简历自动刷新"'], capture_output=True, timeout=10)
     except (OSError, subprocess.TimeoutExpired):
         pass
 
@@ -362,7 +362,7 @@ def schedule_remove(home: Path, config: dict) -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="猎聘简历刷新与本机定时管理")
+    parser = argparse.ArgumentParser(description="猎聘简历自动刷新与定时管理")
     parser.add_argument("--data-dir", type=Path, default=data_home())
     commands = parser.add_subparsers(dest="command", required=True)
     init = commands.add_parser("init")
