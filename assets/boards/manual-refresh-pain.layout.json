@@ -1,0 +1,61 @@
+{
+  "message": "想每天刷新猎聘简历，就要每天记得操作，并确认完成情况。",
+  "composition": "three_equal_columns",
+  "regions": [
+    {
+      "x": 72,
+      "y": 348,
+      "width": 480,
+      "height": 436,
+      "fill": "#375dfe",
+      "title": "01 容易漏掉",
+      "body": [
+        "忙起来忘了打开猎聘",
+        "设提醒后还要自己执行"
+      ],
+      "safe_padding": 72
+    },
+    {
+      "x": 600,
+      "y": 348,
+      "width": 480,
+      "height": 436,
+      "fill": "#ffffff",
+      "title": "02 每天重复",
+      "body": [
+        "打开网页、找到入口",
+        "点完再看是否成功"
+      ],
+      "safe_padding": 72
+    },
+    {
+      "x": 1128,
+      "y": 348,
+      "width": 480,
+      "height": 436,
+      "fill": "#ffffff",
+      "title": "03 结果靠记",
+      "body": [
+        "今天到底刷过没有？",
+        "页面卡住，算成功吗？"
+      ],
+      "safe_padding": 72
+    }
+  ],
+  "canvas": {
+    "width": 1680,
+    "height": 945
+  },
+  "palette": {
+    "blue": "#375dfe",
+    "cream": "#fdf0e0",
+    "navy": "#1a2240",
+    "white": "#ffffff"
+  },
+  "font_sizes": [
+    84,
+    50,
+    30
+  ],
+  "source": "dazibao visual rules"
+}

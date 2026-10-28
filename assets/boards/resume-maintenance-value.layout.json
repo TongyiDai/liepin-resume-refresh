@@ -1,0 +1,52 @@
+{
+  "message": "按计划维护简历活跃状态，减少候选人每天记忆与重复操作的负担。",
+  "composition": "three_equal_rows",
+  "regions": [
+    {
+      "x": 72,
+      "y": 300,
+      "width": 1536,
+      "height": 180,
+      "fill": "#ffffff",
+      "title": "01 少一件要记的事",
+      "body": "到点自动执行，平时不必盯着",
+      "safe_padding": 72
+    },
+    {
+      "x": 72,
+      "y": 496,
+      "width": 1536,
+      "height": 180,
+      "fill": "#ffffff",
+      "title": "02 少一遍重复操作",
+      "body": "每天打开、点击和确认，交给 AI",
+      "safe_padding": 72
+    },
+    {
+      "x": 72,
+      "y": 692,
+      "width": 1536,
+      "height": 180,
+      "fill": "#375dfe",
+      "title": "03 简历按计划维护",
+      "body": "减少漏刷，持续维护简历活跃状态",
+      "safe_padding": 72
+    }
+  ],
+  "canvas": {
+    "width": 1680,
+    "height": 945
+  },
+  "palette": {
+    "blue": "#375dfe",
+    "cream": "#fdf0e0",
+    "navy": "#1a2240",
+    "white": "#ffffff"
+  },
+  "font_sizes": [
+    84,
+    50,
+    30
+  ],
+  "source": "dazibao visual rules"
+}

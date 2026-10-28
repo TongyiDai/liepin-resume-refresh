@@ -1,0 +1,40 @@
+{
+  "message": "本人完成首次登录，AI 承接每日简历刷新操作；必要异常仍交还本人。",
+  "composition": "primary_ai_and_initial_setup",
+  "regions": [
+    {
+      "x": 72,
+      "y": 328,
+      "width": 480,
+      "height": 508,
+      "fill": "#ffffff",
+      "role": "initial_login_and_required_verification",
+      "safe_padding": 72
+    },
+    {
+      "x": 600,
+      "y": 328,
+      "width": 1008,
+      "height": 508,
+      "fill": "#375dfe",
+      "role": "daily_execution_verification_and_record",
+      "safe_padding": 72
+    }
+  ],
+  "canvas": {
+    "width": 1680,
+    "height": 945
+  },
+  "palette": {
+    "blue": "#375dfe",
+    "cream": "#fdf0e0",
+    "navy": "#1a2240",
+    "white": "#ffffff"
+  },
+  "font_sizes": [
+    84,
+    50,
+    30
+  ],
+  "source": "dazibao visual rules"
+}
